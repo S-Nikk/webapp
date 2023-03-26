@@ -6,7 +6,7 @@ export default class UsersDAO{
         return
         }
         try{
-            users= await conn.db(process.env.RestReviews_NS).collection("test")
+            users= await conn.db(process.env.RESTREVIEWS_NS).collection("Users")
         }catch(e)
         {
             console.error(
